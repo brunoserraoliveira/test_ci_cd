@@ -1,0 +1,29 @@
+/* Definindo a cor azul semelhante à da AWS */
+:root {
+    --aws-blue: #146eb4;
+}
+
+/* Estilizando a página para centralizar o conteúdo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:#146eb4;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilizando o container */
+.container {
+    text-align: center;
+    color: #ffffff; /* Cor do texto branca */
+    padding: 20px;
+    background-color: var(--aws-blue); /* Cor de fundo azul */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 60px;
+}
