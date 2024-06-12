@@ -20,8 +20,7 @@ jobs:
       - name: Build and push Docker images
         uses: docker/build-push-action@v5.4.0
         with:
-          context: ./src
-          file: dockerfile
+          context: .
           push: true
           tags: 
             brunooliverserra/site-nginx-test-cicd:v1
