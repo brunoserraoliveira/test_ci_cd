@@ -21,7 +21,7 @@ jobs:
         uses: docker/build-push-action@v5.4.0
         with:
           context: ./src
-          file: .
+          file: dockerfile
           push: true
           tags: 
             brunooliverserra/site-nginx-test-cicd:v1
