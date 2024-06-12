@@ -23,7 +23,10 @@ jobs:
           context: .
           push: true
           tags: 
-            brunooliverserra/site-nginx-test-cicd:v1
-            brunooliverserra/site-nginx-test-cicd:latest
+            ${{secrets.DOCKERHUB_USER}}/site-nginx-test-cicd:v1
+            ${{secrets.DOCKERHUB_USER}}/site-nginx-test-cicd:latest
+
+      - name: Logout do Docker Hub
+        run: docker logout
 
       
